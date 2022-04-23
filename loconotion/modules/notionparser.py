@@ -136,10 +136,15 @@ class Parser:
             if "-" in path and len(path.split("-")) > 1:
                 # a standard notion page looks like the-page-title-[uiid]
                 # strip the uuid and keep the page title only
-                path = "-".join(path.split("-")[:-1]).lower()
+
+                if self.args.get("non-rename", True):
+                    path = path.split("?")[0].lower()
+                else:
+                    path = "-".join(path.split("-")[:-1]).lower()
             elif "?" in path:
                 # database pages just have an uiid and a query param
                 # not much to do here, just get rid of the query param
+                
                 path = path.split("?")[0].lower()
             return path + (".html" if extension else "")
 

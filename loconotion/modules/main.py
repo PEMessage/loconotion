@@ -71,6 +71,11 @@ def get_args():
         help="Run chromedriver in non-headless mode",
     )
     argparser.add_argument(
+        "--non-rename",
+        action="store_true",
+        help="Do not rename slug to avoid ERROR",
+    )
+    argparser.add_argument(
         "-v", "--verbose", action="store_true", help="Increase output log verbosity"
     )
     return argparser.parse_args()
