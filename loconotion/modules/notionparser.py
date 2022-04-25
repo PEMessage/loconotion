@@ -377,6 +377,9 @@ class Parser:
             "div", {"class": "notion-collection-view-select"}
         ):
             collection_selector.decompose()
+        #PE Modify a Little bit Ugly
+        if soup.title.string == u"Notion – The all-in-one workspace for your notes, tasks, wikis, and databases." :
+            soup.title.string.replace_with("PEMury Blog")
 
         # clean up the default notion meta tags
         for tag in [
