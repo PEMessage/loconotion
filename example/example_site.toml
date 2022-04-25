@@ -48,4 +48,8 @@ page = "https://pemessage.notion.site/"
   body = ''
   code = ''
 
-
+  [[site.inject.head.link]]
+  rel="icon" 
+  sizes="16x16"
+  type="image/png"
+  href="/example/icon.png"
