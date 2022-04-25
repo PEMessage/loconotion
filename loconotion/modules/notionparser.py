@@ -728,7 +728,9 @@ class Parser:
 
     def load(self, url):
         self.driver.get(url)
-        WebDriverWait(self.driver, self.args["timeout-page"]).until(notion_page_loaded())
+        timeout_1 = self.args["timeout_page"]
+        
+        WebDriverWait(self.driver, timeout_1).until(notion_page_loaded())
 
     def run(self):
         start_time = time.time()
