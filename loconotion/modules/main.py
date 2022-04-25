@@ -51,6 +51,12 @@ def get_args():
         " If content from the page seems to be missing, try increasing this value",
     )
     argparser.add_argument(
+        "--timeout-page",
+        type=int,
+        default=180,
+        help="The time out value for page get",
+    )
+    argparser.add_argument(
         "--clean",
         action="store_true",
         help="Delete all previously cached files for the site before generating it",
