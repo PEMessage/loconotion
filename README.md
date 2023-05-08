@@ -2,10 +2,15 @@
 
 ## Why Modification ?
 
-本 Fork 添加了一个新的参数 `--non-rename` 使得跳过了原项目对 notion-page id 的重格式化. 来避免相同的Page Title 带来的覆盖. 可通过 `python loconotion -h` 查看项目内的说明. 
+EN: This Fork add a new parameter `--non-rename`  to skip orgin project process of rename notion-page. 
+In order to prevent the overwrite of same page title in different page(page in page) 
+You could also use `python loconotion -h` to check this in app description.
 
-以下为原项目的说明
+CN: 本 Fork 添加了一个新的参数 `--non-rename` 使得跳过了原项目对 notion-page id 的重格式化. 
+来避免相同的Page Title 带来的覆盖. 可通过 `python loconotion -h` 查看项目内的说明. 
 
+
+# BELOW ARE ORGIN DESCRIPTION
 
 
 **Loconotion** is a Python script that parses a [Notion.so](https://notion.so) public page (alongside with all of its subpages) and generates a lightweight, customizable static site out of it.
